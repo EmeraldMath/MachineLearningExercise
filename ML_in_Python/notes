@@ -1,0 +1,43 @@
+shift+tab
+#in jupyter, type an object in the cell and do this, it will give information for this object; from 12 python crash course-part 3
+Alt-Enter runs the current cell and inserts a new one below.
+Ctrl-Enter run the current cell and enters command mode.
+Run a code cell using Shift-Enter
+----------
+def square(param):
+    """
+    Document string
+    """
+    return param**2
+----------
+seq = [1,2,3,4,5]
+def times2(var):
+    return var*2
+
+list(map(times,seq))
+#map means apply times to all members in seq
+-----------
+t = lambda var:var*2
+t(2) #return 12
+list(map(lambda var:var*2, seq))
+#lambda expression
+-----------
+list[filter(lambda num: num%2 == 0, seq)]
+#out: [2,4]
+-----------
+s = 'hello my name is Sam'
+s.(tab)
+#look up method information for object s
+-----------
+x = [(1,2), (3,4), (5,6)]
+for (a,b) in x:
+    print(b)
+#tuple unpacking: output: 2, 4, 6
+------------
+list = [1,2,3]
+list.pop()
+#out: list = [1,2]
+------------
+list = [1, 2, 3]
+list.pop(0)
+#out: list = [2,3]
